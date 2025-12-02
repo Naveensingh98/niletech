@@ -711,3 +711,34 @@ h6,
         max-height: 280px;
     }
 }
+
+/* Fix footer spacing and alignment */
+.footer {
+    padding: 50px 0 !important;
+}
+
+.footer .row {
+    align-items: flex-start;
+}
+
+.footer .btn-link {
+    padding-left: 0 !important;
+    margin-bottom: 5px;
+}
+
+.footer input.form-control {
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Make email signup smaller */
+.footer button.btn {
+    height: 40px;
+    margin-top: 5px !important;
+}
+
+/* Decrease extra gap at bottom section */
+.copyright {
+    background-color: #062c7a !important; /* match your blue */
+    padding: 15px 0 !important;
+}
