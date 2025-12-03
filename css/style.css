@@ -1016,18 +1016,54 @@ h6,
 .feature-line {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.4;
 }
 
+/* Tick icon style */
 .tick-icon {
     color: #003399;  /* Dark Blue */
     font-size: 20px;
     margin-top: 3px;
+    flex-shrink: 0;  /* Prevent icon from shrinking */
 }
 
+/* Paragraph style */
 .feature-line p {
     margin: 0;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-line {
+        flex-direction: column; /* Stack icon and text */
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .tick-icon {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .feature-line p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-line {
+        gap: 4px;
+    }
+
+    .tick-icon {
+        font-size: 16px;
+    }
+
+    .feature-line p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
