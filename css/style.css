@@ -868,3 +868,14 @@ h6,
 
 .orange { background: #e56d00; }
 .orange-light { background: #f58a1f; }
+/* BLINK EFFECT ON HOVER */
+.service-header:hover,
+.service-box:hover {
+    animation: blink 0.4s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.5; transform: scale(1.05); }
+}
