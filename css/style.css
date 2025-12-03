@@ -822,6 +822,7 @@ h6,
     padding: 40px;
 }
 
+/* ---------- STEP BOXES ---------- */
 .step {
     width: 220px;
     padding: 40px 20px;
@@ -832,6 +833,7 @@ h6,
     font-size: 20px;
     font-weight: 600;
     border: 4px solid rgba(255,255,255,0.3);
+    transition: 0.3s ease-in-out;
 }
 
 /* Arrow Effect */
@@ -863,7 +865,21 @@ h6,
     border-left-color: #6bbcff;
 }
 
-/* Final Output Section */
+
+/* ---------- HOVER BLINK / GLOW EFFECT ---------- */
+.step:hover {
+    animation: blinkBox 0.8s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes blinkBox {
+    0% { box-shadow: 0 0 0px rgba(30,144,255,0.3); }
+    50% { box-shadow: 0 0 18px rgba(30,144,255,0.9); }
+    100% { box-shadow: 0 0 0px rgba(30,144,255,0.3); }
+}
+
+
+/* ---------- FINAL OUTPUT SECTION ---------- */
 .final-output {
     display: flex;
     align-items: center;
