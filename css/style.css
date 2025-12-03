@@ -815,3 +815,79 @@ h6,
     font-weight: bold;
     letter-spacing: 1px;
 }
+.process-flow {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.step {
+    width: 220px;
+    padding: 40px 20px;
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 4px solid rgba(255,255,255,0.3);
+}
+
+/* Arrow Effect */
+.step::after {
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid;
+}
+
+/* Blue Gradient Boxes */
+.blue1 {
+    background: linear-gradient(135deg, #003d8d, #1e90ff);
+}
+.blue1::after {
+    border-left-color: #1e90ff;
+}
+
+.blue2 {
+    background: linear-gradient(135deg, #1e90ff, #6bbcff);
+}
+.blue2::after {
+    border-left-color: #6bbcff;
+}
+
+/* Final Output Section */
+.final-output {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.circle-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #1e90ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #1e90ff;
+}
+
+.final-output span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 22px;
+    text-align: left;
+}
