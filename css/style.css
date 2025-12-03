@@ -817,6 +817,10 @@ h6,
 }
 
 
+
+
+
+/* services box desigine */
 .services-container {
     width: 90%;
     margin: auto;
@@ -895,4 +899,54 @@ h6,
 @keyframes blink {
     0% { opacity: 1; transform: scale(1); }
     100% { opacity: 0.5; transform: scale(1.05); }
+}
+
+
+
+
+
+
+/* ROW */
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+/* BOX */
+.product-box {
+    flex: 1;
+    background: #003B8E;        /* Dark Blue */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* HOVER COLOR + BLINK */
+.product-box:hover {
+    background: #0066cc;        /* Hover Color */
+    animation: blink 0.4s infinite alternate;
+    transform: scale(1.05);
+}
+
+/* BLINK ANIMATION */
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .product-row {
+        flex-wrap: wrap;
+    }
+    .product-box {
+        flex: 1 1 45%;
+    }
 }
