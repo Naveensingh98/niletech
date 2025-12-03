@@ -824,13 +824,28 @@ h6,
     font-family: Arial, sans-serif;
 }
 
+/* SERVICES MAIN TITLE */
 .services-title {
-    background: #a7d492;
+    background: #003B8E;      /* Dark Blue */
+    color: #ffffff;           /* White Text */
     padding: 18px 0;
     font-size: 30px;
     font-weight: bold;
     border-radius: 10px;
     margin-bottom: 25px;
+    border: 3px solid #001f4d;   /* Darker Blue Border */
+}
+
+/* BLINK ON HOVER FOR MAIN TITLE */
+.services-title:hover {
+    animation: blink 0.4s infinite alternate;
+    cursor: pointer;
+}
+
+/* BLINK EFFECT (same for all boxes) */
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.6; transform: scale(1.05); }
 }
 
 .service-row {
