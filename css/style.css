@@ -1013,3 +1013,20 @@ h6,
         width: 100%;
     }
 }
+.feature-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.tick-icon {
+    color: #003399;  /* Dark Blue */
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.feature-line p {
+    margin: 0;
+}
