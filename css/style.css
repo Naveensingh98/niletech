@@ -881,3 +881,20 @@ h6,
     0% { opacity: 1; transform: scale(1); }
     100% { opacity: 0.5; transform: scale(1.05); }
 }
+/* SERVICE HEADER – DARK BLUE */
+.service-header {
+    background: #003B8E !important; /* Dark Blue */
+    color: #ffffff !important;      /* White Text */
+}
+
+/* BLINK EFFECT ON HOVER (Header + Boxes) */
+.service-header:hover,
+.service-box:hover {
+    animation: blink 0.4s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.5; transform: scale(1.05); }
+}
