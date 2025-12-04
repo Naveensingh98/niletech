@@ -1183,3 +1183,38 @@ h6,
     }
 }
 /* Niletech Infrabuild Treatment Technology END */
+/* HEADING START In-Situ Treatment of Sludge of Septic Tanks of Community / Mobile Toilets */
+
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+.hover-float:hover {
+    transform: translateY(-6px);
+    transition: 0.3s;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.slide-up-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .8s ease-out;
+}
+
+.slide-up-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.hover-float {
+    transition: 0.3s ease;
+}
+
+.hover-float:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+/* END HEADING START In-Situ Treatment of Sludge of Septic Tanks of Community / Mobile Toilets */
