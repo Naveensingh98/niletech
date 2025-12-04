@@ -1272,3 +1272,46 @@ h6,
     padding: 6px 8px !important;
     font-weight: 800;
 }
+
+
+
+
+
+/* start Newspaper  */
+.news-cutout {
+    background: #fffbe6;                /* light newspaper color */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transform: rotate(-2deg);           /* slight tilt */
+    transition: 0.3s;
+}
+
+/* Torn paper edge */
+.news-cutout:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: url('https://i.imgur.com/Zj7p2Q8.png') repeat-x;
+    opacity: 0.4;
+}
+
+/* Hover – straighten + stronger shadow */
+.news-cutout:hover {
+    transform: rotate(0deg);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Title styling */
+.news-cutout h5 {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* End Newspaper */
