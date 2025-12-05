@@ -1365,5 +1365,43 @@ h6,
 
 
 /* Product Contant Start */
+img.shadow {
+    transition: 0.3s ease;
+}
 
+img.shadow:hover {
+    transform: scale(1.03);
+}
+    /* Ensure left and right content fit correctly */
+    @media (min-width: 992px) {
+        .left-box {
+            max-height: 100%;
+        }
+
+        .right-img-grid img {
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+
+    /* Reduce left width slightly for balance */
+    @media (min-width: 992px) {
+        .col-lg-7 {
+            flex: 0 0 64%;
+            max-width: 64%;
+        }
+        .col-lg-5 {
+            flex: 0 0 36%;
+            max-width: 36%;
+        }
+    }
+
+    /* Optional: Slight spacing fix */
+    .right-img-grid .col-6 {
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+    }
+    
 /* Product Contant ENd  */
