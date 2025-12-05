@@ -165,20 +165,25 @@
             <div class="p-4 bg-white shadow-sm text-center border-blue">
                 <h5 class="text-blue fw-bold mb-3">Send Message</h5>
 
-         <form action="https://formsubmit.co/naveenpsingh98@gmail.com" method="POST">
+         <form action="https://api.web3forms.com/submit" method="POST">
 
-            <!-- Hidden Fields (layout ko koi effect nahi) -->
-            <input type="hidden" name="_subject" value="New Contact Form Message">
-            <input type="hidden" name="_captcha" value="false">
+            <!-- REQUIRED: Your Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+            <!-- (Optional) Email Subject -->
+            <input type="hidden" name="subject" value="New Contact Form Message">
 
             <input class="form-control mb-3" type="text" name="name" placeholder="Your Name" required>
             <input class="form-control mb-3" type="email" name="email" placeholder="Your Email" required>
             <input class="form-control mb-3" type="text" name="phone" placeholder="Your Phone" required>
             <textarea class="form-control mb-3" rows="4" name="message" placeholder="Message" required></textarea>
 
-            <button class="btn btn-primary px-4">SEND</button>
+            <!-- Redirect after submit -->
+            <input type="hidden" name="redirect" value="https://niletech.in/thank-you.html">
 
+            <button class="btn btn-primary px-4">SEND</button>
         </form>
+
             </div>
         </div>
 
