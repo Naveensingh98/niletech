@@ -156,7 +156,7 @@
                 <p class="fw-bold mb-3">Phone : +91 8755469432</p>
 
                 <h5 class="text-blue fw-bold mb-2">Email</h5>
-                <p class="mb-0">niletechinfrabuild@gmail.com</p>
+                <p class="mb-0"><a href="http://niletechinfrabuild@gmail.com">niletechinfrabuild@gmail.com</p></a>
             </div>
         </div>
 
@@ -165,14 +165,20 @@
             <div class="p-4 bg-white shadow-sm text-center border-blue">
                 <h5 class="text-blue fw-bold mb-3">Send Message</h5>
 
-                <form>
-                    <input class="form-control mb-3" type="text" placeholder="Your Name">
-                    <input class="form-control mb-3" type="email" placeholder="Your Email">
-                    <input class="form-control mb-3" type="text" placeholder="Your Phone">
-                    <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+         <form action="https://formsubmit.co/naveenpsingh98@gmail.com" method="POST">
 
-                    <button class="btn btn-primary px-4">SEND</button>
-                </form>
+            <!-- Hidden Fields (layout ko koi effect nahi) -->
+            <input type="hidden" name="_subject" value="New Contact Form Message">
+            <input type="hidden" name="_captcha" value="false">
+
+            <input class="form-control mb-3" type="text" name="name" placeholder="Your Name" required>
+            <input class="form-control mb-3" type="email" name="email" placeholder="Your Email" required>
+            <input class="form-control mb-3" type="text" name="phone" placeholder="Your Phone" required>
+            <textarea class="form-control mb-3" rows="4" name="message" placeholder="Message" required></textarea>
+
+            <button class="btn btn-primary px-4">SEND</button>
+
+        </form>
             </div>
         </div>
 
