@@ -167,22 +167,21 @@
 
          <form action="https://api.web3forms.com/submit" method="POST">
 
-            <!-- REQUIRED: Your Web3Forms Access Key -->
-            <input type="hidden" name="access_key" value="368b9b56-1299-4d14-967e-3bafc5e2d75c">
+    <input type="hidden" name="access_key" value="368b9b56-1299-4d14-967e-3bafc5e2d75c">
+    <input type="hidden" name="subject" value="New Contact Message from Website">
 
-            <!-- (Optional) Email Subject -->
-            <input type="hidden" name="subject" value="New Contact Form Message">
+    <!-- Auto reply message -->
+    <input type="hidden" name="auto_reply" value="Thank you for contacting NileTech. We have received your message and will get back to you shortly.">
 
-            <input class="form-control mb-3" type="text" name="name" placeholder="Your Name" required>
-            <input class="form-control mb-3" type="email" name="email" placeholder="Your Email" required>
-            <input class="form-control mb-3" type="text" name="phone" placeholder="Your Phone" required>
-            <textarea class="form-control mb-3" rows="4" name="message" placeholder="Message" required></textarea>
+    <input class="form-control mb-3" type="text" name="name" placeholder="Your Name" required>
+    <input class="form-control mb-3" type="email" name="email" placeholder="Your Email" required>
+    <input class="form-control mb-3" type="text" name="phone" placeholder="Your Phone" required>
+    <textarea class="form-control mb-3" rows="4" name="message" placeholder="Message" required></textarea>
 
-            <!-- Redirect after submit -->
-            <input type="hidden" name="redirect" value="https://niletech.in/thank-you.html">
+    <button class="btn btn-primary px-4">SEND</button>
 
-            <button class="btn btn-primary px-4">SEND</button>
-        </form>
+</form>
+
 
             </div>
         </div>
