@@ -1364,22 +1364,5 @@ img.shadow:hover {
     
 /* Product Contant ENd  */
 /* project contant start  */
-.case-box {
-    border: 2px solid #e5ebff !important;
-    background: #ffffffdd !important;
-    transition: .3s;
-}
-
-.case-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
-.case-img {
-    width: 100%;
-    height: 230px !important;
-    object-fit: cover;
-    border-radius: 12px;
-}
 
 /* project contant end  */
