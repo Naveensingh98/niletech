@@ -1362,3 +1362,46 @@ h6,
 }
 
 /* End Newspaper */
+
+
+/* Product Contant Start */
+ /* Typography tweaks */
+  #niletreat-heading {
+    line-height: 1.05 !important;
+    letter-spacing: -0.2px !important;
+    font-size: clamp(1.4rem, 2.2vw, 1.75rem) !important;
+  }
+
+  #niletreat-tagline {
+    font-size: 0.95rem !important;
+  }
+
+  .niletreat-image {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 14px !important;
+    transition: transform .35s ease, box-shadow .35s ease !important;
+  }
+
+  .niletreat-image:hover {
+    transform: translateY(-6px) scale(1.01) !important;
+    box-shadow: 0 18px 40px rgba(10,20,40,0.12) !important;
+  }
+
+  /* Ensure lists are readable on small screens */
+  .lead { font-size: 1rem !important; }
+
+  /* Reduce gaps on small devices */
+  @media (max-width: 767.98px) {
+    .container { padding-left: 1rem !important; padding-right: 1rem !important; }
+    .niletreat-image { max-width: 100% !important; }
+  }
+
+  /* Utility to force consistent list spacing */
+  .list-unstyled li { margin-bottom: .6rem; }
+
+  /* Keep numeric badge boxes equal height */
+  .row .border { min-height: 92px; display:flex; align-items:center; 
+    justify-content:center; flex-direction:column; }
+/* Product Contant ENd  */
