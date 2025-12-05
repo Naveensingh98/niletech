@@ -517,7 +517,12 @@ h6,
     letter-spacing: 1px;
     box-shadow: none;
 }
+/* .footer * {
+    margin: 4 !important;
+    padding: 4 !important;
+} */
 
+/*copyright */
 .copyright {
     color: var(--light);
     background: #072A19;
