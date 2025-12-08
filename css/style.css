@@ -1364,5 +1364,155 @@ img.shadow:hover {
     
 /* Product Contant ENd  */
 /* project contant start  */
+/* Increase left spacing more */
+.case-wrapper .col-lg-7 {
+    padding-left: 55px !important;   /* increased */
+}
+
+/* Main Heading Format */
+.heading-bar {
+    background: #1a8cff;
+    padding: 25px 0;
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-inner {
+    background: #ffffff;
+    padding: 12px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a8cff;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Small Headings (Challenge, Intervention etc.) */
+.case-section-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d47a1;
+    margin: 25px 0 15px 0;
+    padding: 8px 18px;
+    border: 2px solid #1a8cff;
+    border-radius: 30px;
+    display: inline-block;
+    background: #f0f7ff;
+}
+
+/* Right images styling */
+.case-img {
+    border-radius: 12px;
+    border: 2px solid #e0ebff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Optional: spacing between paragraphs */
+.case-wrapper p {
+    margin-bottom: 12px;
+}
+/* Light background */
+.case-light {
+    background: #f5faff;
+    padding: 50px 0;
+}
+
+/* Left side spacing */
+.case-wrapper .col-lg-7 {
+    padding-left: 55px !important;
+}
+
+/* Heading bar */
+.heading-bar {
+    background: #1a8cff;
+    padding: 25px 0;
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-inner {
+    background: #ffffff;
+    padding: 12px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a8cff;
+}
+
+/* Small centered section titles */
+.case-section-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d47a1;
+    margin: 25px 0 15px 0;
+    padding: 8px 20px;
+    border: 2px solid #1a8cff;
+    border-radius: 30px;
+    display: inline-block;
+    background: #ffffff;
+}
+
+/* Image styling */
+.case-img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #d9e8ff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+.case3-bg {
+    background: #f1f7ff; /* Light unique background */
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.case-header-outer {
+    background: #1e90ff;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.case-header-inner {
+    background: #ffffff;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1e90ff;
+}
+
+.case-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #00356b;
+}
+
+.sub-heading {
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #007bff;
+    display: inline-block;
+    padding: 6px 18px;
+    margin: 20px 0 15px 0;
+    border-radius: 20px;
+    background: #e9f3ff;
+    color: #0056b3;
+}
+
+.case-img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
 
 /* project contant end  */
