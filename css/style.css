@@ -1514,3 +1514,34 @@ img.shadow:hover {
 }
 
 /* project contant end  */
+/* start service contant link  */
+.main-heading {
+    color: #6ec1e4 !important;   /* Light Blue */
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+}
+
+.sub-heading {
+    font-weight: 600 !important;
+    color: #333 !important;
+}
+
+.text-content {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    color: #555 !important;
+    max-width: 1000px !important;
+    margin: auto !important;
+}
+
+.service-img {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.service-img:hover {
+    transform: scale(1.05) !important;
+}
+
+/* end service contant link  */
