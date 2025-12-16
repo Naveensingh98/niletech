@@ -1849,6 +1849,127 @@ img.shadow:hover {
         width: 100%;
     }
 }
+/* Sustainable Planning */
+/* Container */
+.sustainable-planning-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
 
+/* Main Heading */
+.main-heading {
+    text-align: center;
+    color: #5bbcff; /* light blue */
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Layout */
+.content-wrapper {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Image */
+.image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
+}
+
+.image-container img:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Text */
+.text-container {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.text-container h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    margin-bottom: 16px;
+    line-height: 1.75;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+}
+.content-wrapper {
+    display: flex;
+    gap: 35px;
+    align-items: center;   /* 👈 THIS IS THE MAIN FIX */
+    flex-wrap: wrap;
+}
+/* hydro */
+.section-heading {
+  text-align: center;
+  color: #6ec1e4;
+  margin-bottom: 30px;
+}
+
+/* Full width text */
+.full-width-text {
+  margin-bottom: 35px;
+}
+
+/* Image + content layout */
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Image */
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Lift-up animation */
+.lift-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: liftUp 0.9s ease forwards;
+}
+
+@keyframes liftUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
 
 /* end service contant link  */
