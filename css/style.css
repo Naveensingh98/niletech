@@ -1543,5 +1543,22 @@ img.shadow:hover {
 .service-img:hover {
     transform: scale(1.05) !important;
 }
+.tech-sub-heading {
+    font-weight: 600 !important;
+    color: #2c2c2c !important;
+}
+
+.tech-content {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    color: #555 !important;
+    max-width: 950px !important;
+    margin: auto !important;
+}
+
+.tech-img {
+    border-radius: 12px !important;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.18) !important;
+}
 
 /* end service contant link  */
