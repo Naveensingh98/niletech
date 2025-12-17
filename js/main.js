@@ -90,21 +90,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     elements.forEach(el => observer.observe(el));
 });
-<script>
-function sendCV() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var position = document.getElementById("position").value;
-
-    var subject = encodeURIComponent("Job Application - " + position);
-    var body = encodeURIComponent(
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n" +
-        "Position: " + position + "\n\n" +
-        "Please find my CV attached."
-    );
-
-    window.location.href =
-        "mailto:hrd@niletechnologies.com?subject=" + subject + "&body=" + body;
-}
-</script>
