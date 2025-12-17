@@ -1973,3 +1973,120 @@ img.shadow:hover {
 }
 
 /* end service contant link  */
+/* Start career page */
+.career-mid {
+    padding: 60px 20px;
+    background: #f4f9fc;
+    text-align: center;
+}
+
+.career-mid h2 {
+    color: #0b6fa4;
+    margin-bottom: 10px;
+}
+
+.career-intro {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+}
+
+.career-box {
+    max-width: 900px;
+    margin: auto;
+}
+
+.career-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.career-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #0b6fa4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.career-btn:hover {
+    background: #095c88;
+}
+/* Ultra thin full-width strip */
+.contact-strip {
+    background: #efefef;
+    padding: 6px 0;   /* aur kam height */
+}
+
+/* Text tight */
+.contact-strip p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Button very compact */
+.contact-btn {
+    background-color: #0b5e8e;
+    color: #fff;
+    font-weight: 600;
+    padding: 6px 16px;   /* minimum comfortable height */
+    border-radius: 2px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Only button lift-up */
+.contact-btn:hover {
+    background-color: #084a70;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+}
+.career-info h3 {
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.career-info h5 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.career-info p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Right sidebar */
+.career-sidebar {
+    padding-left: 25px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.career-sidebar p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.career-sidebar i {
+    margin-right: 8px;
+    color: #0b5e8e;
+}
+
+/* Map box */
+.map-box {
+    margin-top: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* end career page */
