@@ -2091,49 +2091,66 @@ img.shadow:hover {
 
 /* end career page */
 /* cv section  */
+/* Center the whole Send CV section */
 .send-cv-box {
-    max-width: 500px;
-    margin: 40px auto 0;
-    background: #fff;
-    padding: 25px;
-    border-radius: 6px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 520px;
+    margin: 50px auto;          /* CENTER */
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-align: left;
 }
 
+/* Heading clean & professional */
 .send-cv-box h3 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #0b5e8e;
     text-align: center;
+    font-weight: 600;
 }
 
+/* Form spacing */
 .send-cv-box .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
+/* Inputs professional size */
+.send-cv-box input[type="text"],
+.send-cv-box input[type="email"],
 .send-cv-box input[type="file"] {
-    padding: 8px;
+    width: 100%;
+    padding: 11px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
+/* Small helper text */
 .send-cv-box small {
     display: block;
-    margin-top: 5px;
+    margin-top: 6px;
     color: #777;
+    font-size: 12px;
 }
 
-/* Reuse existing button style */
-.career-btn {
+/* Button full width & centered */
+.send-cv-box .career-btn {
     width: 100%;
+    margin-top: 10px;
     background-color: #0b5e8e;
     color: #fff;
-    padding: 10px;
+    padding: 11px;
+    font-size: 15px;
     font-weight: 600;
     border: none;
     border-radius: 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.career-btn:hover {
+/* Button hover – subtle lift */
+.send-cv-box .career-btn:hover {
     background-color: #084a70;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
 }
