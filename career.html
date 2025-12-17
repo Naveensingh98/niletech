@@ -178,31 +178,31 @@
 <div class="send-cv-box">
     <h3>Send Your CV</h3>
 
-    <form action="send-cv.php" method="post" enctype="multipart/form-data">
+    <form onsubmit="sendCV(); return false;">
         
         <div class="form-group">
-            <input type="text" name="name" class="form-control" placeholder="Your Full Name" required>
+            <input type="text" id="name" class="form-control" placeholder="Your Full Name" required>
         </div>
 
         <div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="Your Email Address" required>
+            <input type="email" id="email" class="form-control" placeholder="Your Email Address" required>
         </div>
 
         <div class="form-group">
-            <input type="text" name="position" class="form-control" placeholder="Position Applying For" required>
-        </div>
-
-        <div class="form-group">
-            <input type="file" name="cv" class="form-control" accept=".pdf,.doc,.docx" required>
-            <small>Upload CV (PDF / DOC / DOCX)</small>
+            <input type="text" id="position" class="form-control" placeholder="Position Applying For" required>
         </div>
 
         <button type="submit" class="career-btn">
             Send CV
         </button>
 
+        <small style="display:block;text-align:center;margin-top:10px;">
+            * CV will be attached from your email
+        </small>
+
     </form>
 </div>
+
 
 <!-- CAREER SECTION END -->
 <section class="career-info py-5">
@@ -364,7 +364,7 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                    Designed By <a class="border-bottom" href="https://www.neevsofttechnologies.com/">Neev Soft Technologies</a> 
                 </div>
             </div>
         </div>
@@ -390,6 +390,25 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+function sendCV() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var position = document.getElementById("position").value;
+
+    var subject = encodeURIComponent("Job Application - " + position);
+    var body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Position: " + position + "\n\n" +
+        "Please find my CV attached."
+    );
+
+    window.location.href =
+        "mailto:niletechinfrabuild@gmail.com?subject=" + subject + "&body=" + body;
+}
+</script>
+
     
 </body>
 
