@@ -2090,3 +2090,50 @@ img.shadow:hover {
 }
 
 /* end career page */
+/* cv section  */
+.send-cv-box {
+    max-width: 500px;
+    margin: 40px auto 0;
+    background: #fff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.send-cv-box h3 {
+    margin-bottom: 20px;
+    color: #0b5e8e;
+    text-align: center;
+}
+
+.send-cv-box .form-group {
+    margin-bottom: 15px;
+}
+
+.send-cv-box input[type="file"] {
+    padding: 8px;
+}
+
+.send-cv-box small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+}
+
+/* Reuse existing button style */
+.career-btn {
+    width: 100%;
+    background-color: #0b5e8e;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-btn:hover {
+    background-color: #084a70;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
