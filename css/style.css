@@ -2207,3 +2207,27 @@ img.shadow:hover {
     width: 100%;
     object-fit: cover;
 }
+.desilting-heading {
+    color: #0b3c6d;   /* dark blue */
+    font-weight: 700;
+}
+
+/* Image wrapper */
+.desilting-img-wrapper {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.desilting-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover effect */
+.desilting-img-wrapper:hover .desilting-img {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
