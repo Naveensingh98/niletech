@@ -2342,32 +2342,106 @@ html, body {
     overflow-x: hidden;
 }
 
-.second-logo {
+/* .second-logo {
     height: 70px;
     width: 300px;
     max-width: 100%;
     object-fit: cover;
-    object-position: left;
+    object-position: left; */
 
     /* 👇 right shift */
-    margin-left: 15px;   /* yahan 8–16px best hota hai */
-}
+    /* margin-left: 15px;   yahan 8–16px best hota hai
+} */
 
 
 
 /* Tablet */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .second-logo {
         width: 160px;
         height: 38px;
     }
-}
+} */
 
 /* Mobile */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .second-logo {
         width: 130px;
         height: 34px;
     }
+} */
+
+.sdg-text-logo {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    line-height: 1.1;
+    color: #0a58ca;
+    white-space: nowrap;
 }
 
+/* Committed to */
+.sdg-top {
+    display: block;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+/* SUSTAINABLE */
+.sdg-main {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* DEVELOPMENT */
+.sdg-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* GOALS */
+.sdg-goals {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 800;
+    gap: 4px;
+}
+
+/* Colored O circle */
+.sdg-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 14px;
+    background: conic-gradient(
+        #e5243b,
+        #dda63a,
+        #4c9f38,
+        #c5192d,
+        #ff3a21,
+        #26bde2,
+        #fcc30b,
+        #a21942
+    );
+    color: #fff;
+}
+
+/* Bottom color bar */
+.sdg-bar {
+    margin-top: 4px;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        #f9a602,
+        #4c9f38,
+        #e5243b,
+        #26bde2
+    );
+}
