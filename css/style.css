@@ -1441,7 +1441,7 @@ img.shadow:hover {
 }
 /* Light background */
 .case-light {
-    background: #f5faff;
+    background: #a4eea4;
     padding: 50px 0;
 }
 
@@ -1491,7 +1491,7 @@ img.shadow:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 .case3-bg {
-    background: #f1f7ff;
+    background: #a4eea4;
     padding: 40px;
     border-radius: 15px;
 }
@@ -1540,7 +1540,7 @@ img.shadow:hover {
 /* project contant end  */
 /* start service contant link  */
 .main-heading {
-    color: #6ec1e4 !important;   /* Light Blue */
+    color: #0e48c5 !important;   /* Light Blue */
     font-weight: 700 !important;
     margin-bottom: 10px !important;
 }
@@ -1812,7 +1812,7 @@ img.shadow:hover {
 /* Main Heading */
 .main-heading {
     text-align: center;
-    color: #130250; /* Light blue */
+    color: #0e48c5; /* Light blue */
     font-size: 36px;
     margin-bottom: 40px;
     font-weight: 700;
@@ -1884,7 +1884,7 @@ img.shadow:hover {
 /* Main Heading */
 .main-heading {
     text-align: center;
-    color: #a25bff; /* light blue */
+    color: #0e48c5; /* light blue */
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -1952,7 +1952,7 @@ img.shadow:hover {
 /* hydro */
 .section-heading {
   text-align: center;
-  color: #916ee4;
+  color: #3f0db5;
   margin-bottom: 30px;
 }
 
@@ -2447,6 +2447,142 @@ html, body {
 }
 
 /* FORCE DARK BLUE HEADING */
-.water-pollution-title {
-    color: #0a58ca !important;
+
+.water-title-text {
+    color: #0a58ca;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+/* ==============================
+   GLOBAL TEXT ALIGNMENT & JUSTIFY
+   ============================== */
+
+/* Paragraphs */
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Lists */
+li {
+    text-align: justify;
+}
+
+/* Content containers (safe selectors) */
+.text-container p,
+.left-content p,
+.right-content p,
+.infra-content,
+.tech-content,
+.water-content p,
+.text-content,
+.full-width-text p {
+    text-align: justify;
+}
+
+/* Headings – professional alignment */
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+/* Service cards headings (better look) */
+.service-text h4 {
+    text-align: center;
+}
+
+/* Footer text clean */
+.footer p,
+.footer a {
+    text-align: left;
+}
+
+/* Navbar text untouched */
+.navbar-nav .nav-link {
+    text-align: center;
+}
+
+/* Remove awkward spacing in justified text */
+p {
+    hyphens: auto;
+}
+/* ==============================
+   NAVBAR STICKY (BOOTSTRAP SAFE)
+   ============================== */
+
+/* Navbar sticky */
+.navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 1020; /* Bootstrap standard */
+    background-color: #ffffff;
+}
+
+/* IMPORTANT: kisi parent pe overflow hidden na ho */
+body,
+.container,
+.container-fluid {
+    overflow-x: visible;
+}
+/* ==============================
+   GLOBAL TEXT – SLIGHTLY BOLD & DARK
+   ============================== */
+
+/* Base text */
+body {
+    color: #2b2b2b;      /* dark grey (soft, not black) */
+    font-weight: 500;    /* slightly bold */
+}
+
+/* Paragraphs */
+p {
+    color: #2f2f2f;
+    font-weight: 500;
+}
+
+/* Lists */
+li {
+    color: #2f2f2f;
+    font-weight: 500;
+}
+
+/* Headings */
+h1, h2 {
+    color: #0a3d91;      /* dark blue */
+    font-weight: 700;
+}
+
+h3, h4 {
+    color: #0a3d91;
+    font-weight: 600;
+}
+
+/* Buttons & links text */
+a, .btn {
+    font-weight: 600;
+}
+
+/* Navbar text */
+.navbar-nav .nav-link {
+    color: #1f1f1f;
+    font-weight: 600;
+}
+
+/* Footer text (readable but not heavy) */
+.footer p,
+.footer a {
+    color: #d0d0d0;
+    font-weight: 500;
+}
+.text-red {
+    color: #edc5c8;   /* professional red */
+}
+.founder-email a {
+    color: #0a58ca;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.founder-email a:hover {
+    text-decoration: underline;
 }
