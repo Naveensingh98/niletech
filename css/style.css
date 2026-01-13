@@ -2337,3 +2337,37 @@ img.shadow:hover {
 }
 
 /* logo end  */
+/* navbar second logo  */
+html, body {
+    overflow-x: hidden;
+}
+
+.second-logo {
+    height: 70px;
+    width: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: left;
+
+    /* 👇 right shift */
+    margin-left: 15px;   /* yahan 8–16px best hota hai */
+}
+
+
+
+/* Tablet */
+@media (max-width: 991px) {
+    .second-logo {
+        width: 160px;
+        height: 38px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .second-logo {
+        width: 130px;
+        height: 34px;
+    }
+}
+
