@@ -1775,7 +1775,7 @@ img.shadow:hover {
 
 /* Sustainable Outcomes Section */
 .sustainable-outcomes-section {
-    background: #f9f9f9;
+    background: #a4eea4;
     padding: 40px 20px;
     margin-top: 30px;
 }
@@ -1812,7 +1812,7 @@ img.shadow:hover {
 /* Main Heading */
 .main-heading {
     text-align: center;
-    color: #4db8ff; /* Light blue */
+    color: #130250; /* Light blue */
     font-size: 36px;
     margin-bottom: 40px;
     font-weight: 700;
@@ -1952,7 +1952,7 @@ img.shadow:hover {
 /* hydro */
 .section-heading {
   text-align: center;
-  color: #6ec1e4;
+  color: #916ee4;
   margin-bottom: 30px;
 }
 
@@ -2444,4 +2444,9 @@ html, body {
         #e5243b,
         #26bde2
     );
+}
+
+/* FORCE DARK BLUE HEADING */
+.water-pollution-title {
+    color: #0a58ca !important;
 }
