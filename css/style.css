@@ -2586,3 +2586,14 @@ a, .btn {
 .founder-email a:hover {
     text-decoration: underline;
 }
+.email-link {
+    color: #ffffff;          /* blue bg pe white text */
+    text-decoration: none;
+    margin-left: 4px;
+    transition: all 0.25s ease;
+}
+
+.email-link:hover {
+    color: #cfe2ff;          /* soft light blue */
+    text-decoration: underline;
+}
