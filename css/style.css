@@ -2597,3 +2597,13 @@ a, .btn {
     color: #cfe2ff;          /* soft light blue */
     text-decoration: underline;
 }
+.phone-link {
+    color: #ffffff;              /* White text */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+    color: #a39beb;              /* Soft golden hover (premium look) */
+}
