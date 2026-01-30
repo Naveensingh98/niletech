@@ -2607,3 +2607,22 @@ a, .btn {
 .phone-link:hover {
     color: #a39beb;              /* Soft golden hover (premium look) */
 }
+.heading-wrapper {
+    background: #1e90ff;
+    padding: 25px 0;
+    border-radius: 0;   /* left right full touch */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;   /* niche content se space */
+}
+
+.heading-pill {
+    display: inline-block;
+    background: #ffffff;
+    color: #1e90ff;
+    padding: 12px 35px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
