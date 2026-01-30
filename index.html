@@ -794,45 +794,43 @@
 
     <h2 class="pro-heading light-blue">Before & After Results</h2>
 
-        <div class="ba-wrapper">
+<div class="ba-slider">
 
-            <!-- SET 1 -->
-            <div class="ba-pair">
-                <div class="ba-box">
-                    <img src="img/before1.png" alt="">
-                    <span>Before</span>
-                </div>
-                <div class="ba-box">
-                    <img src="img/after1.png" alt="">
-                    <span>After</span>
-                </div>
-            </div>
-
-            <!-- SET 2 -->
-            <div class="ba-pair">
-                <div class="ba-box">
-                    <img src="img/before2.png" alt="">
-                    <span>Before</span>
-                </div>
-                <div class="ba-box">
-                    <img src="img/after2.png" alt="">
-                    <span>After</span>
-                </div>
-            </div>
-
-            <!-- SET 3 -->
-            <div class="ba-pair">
-                <div class="ba-box">
-                    <img src="img/before3.png" alt="">
-                    <span>Before</span>
-                </div>
-                <div class="ba-box">
-                    <img src="img/after3.png" alt="">
-                    <span>After</span>
-                </div>
-            </div>
-
+    <div class="ba-pair active">
+        <div class="ba-box">
+            <img src="img/before1.png">
+            <span>Before</span>
         </div>
+        <div class="ba-box">
+            <img src="img/after1.png">
+            <span>After</span>
+        </div>
+    </div>
+
+    <div class="ba-pair">
+        <div class="ba-box">
+            <img src="img/before2.png">
+            <span>Before</span>
+        </div>
+        <div class="ba-box">
+            <img src="img/after2.png">
+            <span>After</span>
+        </div>
+    </div>
+
+    <div class="ba-pair">
+        <div class="ba-box">
+            <img src="img/before3.png">
+            <span>Before</span>
+        </div>
+        <div class="ba-box">
+            <img src="img/after3.png">
+            <span>After</span>
+        </div>
+    </div>
+
+</div>
+
 
 
 
@@ -994,6 +992,25 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+let slides = document.querySelectorAll('.ba-pair');
+let index = 0;
+
+function showSlide() {
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    slides[index].classList.add('active');
+
+    index++;
+
+    if(index >= slides.length){
+        index = 0;
+    }
+}
+
+setInterval(showSlide, 4000); // 2000ms = 2 seconds
+</script>
+
 
 <!-- Floating Social Bar -->
 <!-- PREMIUM Floating Contact Bar -->
