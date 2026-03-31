@@ -2723,3 +2723,52 @@ body{
     text-align:center;
     width:100%;
 }
+
+.sustainable-outcomes-section h2{
+    margin-bottom:0 !important;
+}
+
+.sustainable-outcomes-section p{
+    margin-bottom:3px !important;
+}
+
+/* top section bottom space remove */
+.advanced-tech-section{
+    padding-bottom:0 !important;
+    margin-bottom:0 !important;
+}
+
+/* middle section bilkul close */
+.sustainable-outcomes-section{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+}
+
+/* heading spacing remove */
+.sustainable-outcomes-section h2{
+    margin-top:0 !important;
+    margin-bottom:3px !important;
+}
+
+/* paragraph spacing minimum */
+.sustainable-outcomes-section p{
+    margin-bottom:5px !important;
+}
+
+/* image section top gap remove */
+.container.py-4{
+    padding-top:0 !important;
+    margin-top:0 !important;
+}
+
+/* row vertical gap minimum */
+.g-4{
+    --bs-gutter-y:5px !important;
+}
+
+/* ensure no hidden spacing */
+section{
+    margin-bottom:0 !important;
+}
