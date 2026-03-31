@@ -622,30 +622,44 @@ h6,
     background: #111;
     padding: 0;
 }
+
 .about-img,
 .founder-col {
     align-self: flex-start;
 }
 
-.founder-box {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
+/* FINAL FIX */
+/* column ko full width lene do */
+.founder-col{
+    width: 100%;
 }
 
+/* box styling */
+.founder-box,
+.expertise-box{
+    background:#f8f9fa;
+    padding:20px 25px;
+    border-radius:8px;
+    width:100%;
+}
+
+.founder-email{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.founder-email a{
+    white-space:nowrap;
+}
+/* hero layout */
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     width: 100%;
-    min-height: 400px; /* reduce height */
-}
-.founder-box,
-.expertise-box {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
+    min-height: 400px;
 }
 
 @media (min-width: 992px) {
@@ -658,7 +672,7 @@ h6,
 .hero-image img {
     width: 90%;
     height: 100%;
-    max-height: 450px; /* reduced height */
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -671,7 +685,6 @@ h6,
     padding: 40px;
     border-radius: 4px;
 }
-
 /* TITLE + TEXT STYLE */
 .hero-content .sub-title {
     color: #6cff4d;
@@ -1304,41 +1317,35 @@ h6,
 
 /* Start Call Mail Whatsapp */
 /* Floating Bar Holder */
-.contact-bar {
+/* Floating contact bar */
+.contact-bar{
     position: fixed;
+    left: 10px;        /* screen ke edge se gap */
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    z-index: 99999;
+    z-index: 999;
 }
 
-/* PREMIUM BLUE THEME — Smaller */
-.contact-item {
-    width: 45px;
-    height: 45px;
-    background: linear-gradient(145deg, #005DFF, #1A8CFF);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff !important;  /* <- GREEN STOP */
-    font-size: 18px;
-    transition: all 0.35s ease-in-out;
-    text-decoration: none;
-    box-shadow: 0 6px 20px rgba(0, 93, 255, 0.35);
+/* icons design */
+.contact-item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:50px;
+    height:50px;
+    margin:10px 0;
+    background:#1e88e5;
+    color:white;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
 }
 
-/* HOVER */
-.contact-item:hover {
-    transform: scale(1.15) translateX(6px);
-    background: linear-gradient(145deg, #1A8CFF, #005DFF);
-    color: #ffffff !important;  /* <- GREEN STOP */
-    box-shadow: 0 10px 28px rgba(0, 93, 255, 0.55);
+/* hover effect */
+.contact-item:hover{
+    background:#0d6efd;
+    color:#fff;
 }
-
 /* ICON COLOR FIX (Bootstrap WhatsApp icon is green by default) */
 .contact-item i {
     color: #ffffff !important;   /* <- FORCE WHITE */
@@ -2677,4 +2684,38 @@ a, .btn {
     .ba-pair{
         grid-template-columns:1fr;
     }
+}
+
+
+/* floating bar width ke equal left space */
+body{
+
+    margin-left:70px;   /* icons ke liye space reserve */
+    margin-right:10px;
+
+}
+
+
+/* floating contact bar position */
+.contact-bar{
+
+    position:fixed;
+
+    left:20px;
+
+    top:55%;
+
+    transform:translateY(-50%);
+
+    z-index:999;
+
+}
+@media(max-width:768px){
+
+    body{
+
+        margin-left:70px;
+
+    }
+
 }
